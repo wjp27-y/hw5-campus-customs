@@ -17,6 +17,38 @@ HW 5 is a new assignment focused on creating an agentic team that runs the Campu
 
 The Campus Customs MCP server is configured in the project-root `.mcp.json`. Smoke-test results are saved in `output/mcp_smoke.json`.
 
+## Running the submission
+
+From the repository root, create a virtual environment, install the dependencies, and copy `.env.example` to `.env` with the required local credentials. Never commit `.env`.
+
+Before running the agent team, reset the working database by copying the original database over it:
+
+```powershell
+Copy-Item data/campus_customs.db data/campus_customs_new.db -Force
+```
+
+Start the MCP server in one terminal:
+
+```powershell
+python mcp_server/server.py
+```
+
+Start the FastAPI backend in a second terminal:
+
+```powershell
+uvicorn backend.main:app --reload
+```
+
+Start the React board in a third terminal:
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+To run all three tickets, reset `data/campus_customs_new.db` first, then run the agent-team entry point for Tickets 101, 102, and 103. Reset the working database again whenever a clean repeatable run is needed. The resulting evidence is recorded in `output/`.
+
 ## Problem 8 - Agent dashboard
 
 The React + Vite + TypeScript dashboard is in [Problem 8 - Agent dashboard/frontend](Problem%208%20-%20Agent%20dashboard/frontend/). It connects to the Problem 7 API at `http://localhost:8000`.
