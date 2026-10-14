@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Customs — Ticket Planning</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #1e293b;
+      background: #f1f5f9;
+    }
+
+    * { box-sizing: border-box; }
+
+    body { margin: 0; padding: 2rem 1rem; }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #dbe3ed;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgb(15 23 42 / 8%);
+      overflow: hidden;
+    }
+
+    header { padding: 1.5rem 1.75rem 1rem; }
+    h1 { margin: 0 0 .4rem; font-size: 1.6rem; }
+    header p { margin: 0; color: #475569; }
+
+    [role="tablist"] {
+      display: flex;
+      gap: .25rem;
+      padding: .5rem 1rem 0;
+      overflow-x: auto;
+      border-bottom: 1px solid #cbd5e1;
+      background: #f8fafc;
+    }
+
+    [role="tab"] {
+      appearance: none;
+      border: 1px solid transparent;
+      border-bottom: 0;
+      border-radius: 7px 7px 0 0;
+      padding: .75rem 1rem;
+      background: transparent;
+      color: #334155;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    [role="tab"][aria-selected="true"] {
+      background: #fff;
+      border-color: #cbd5e1;
+      color: #1d4ed8;
+      margin-bottom: -1px;
+    }
+
+    [role="tab"]:focus-visible {
+      outline: 3px solid #93c5fd;
+      outline-offset: 2px;
+    }
+
+    [role="tabpanel"] { padding: 1.5rem 1.75rem 2rem; }
+    [role="tabpanel"][hidden] { display: none; }
+    .sections { display: grid; gap: 1rem; }
+
+    section {
+      min-height: 112px;
+      padding: 1rem 1.1rem;
+      border: 1px solid #dbe3ed;
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    section h2 { margin: 0 0 .65rem; font-size: 1.1rem; }
+    section p { margin: 0; line-height: 1.55; white-space: pre-wrap; }
+    .actual p { color: #64748b; font-style: italic; }
+    .empty { color: #64748b; }
+    .run-results { margin: 0 1.75rem 2rem; padding-top: 1.25rem; border-top: 1px solid #cbd5e1; }
+    .run-results h2 { margin: 0 0 .35rem; font-size: 1.25rem; }
+    .run-results > p { margin: 0 0 1rem; color: #475569; }
+    .result-grid { display: grid; gap: 1rem; }
+    .result-card { padding: 1rem 1.1rem; border: 1px solid #dbe3ed; border-radius: 8px; background: #f8fafc; }
+    .result-card h3 { margin: 0 0 .55rem; font-size: 1.05rem; }
+    .result-card p { margin: .35rem 0; line-height: 1.5; }
+    .status { font-weight: 700; color: #92400e; }
+    .tools { color: #475569; font-size: .95rem; }
+
+    @media (min-width: 720px) {
+      .sections { grid-template-columns: 1fr 1fr; align-items: stretch; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Campus Customs — Ticket Planning</h1>
+      <p>Expected plans are recorded for Tickets 101–103. Actual sections are intentionally blank for the run results.</p>
+    </header>
+
+    <div role="tablist" aria-label="Ticket planning tabs">
+      <button id="tab-101" type="button" role="tab" aria-selected="true" aria-controls="panel-101" tabindex="0">Ticket 101</button>
+      <button id="tab-102" type="button" role="tab" aria-selected="false" aria-controls="panel-102" tabindex="-1">Ticket 102</button>
+      <button id="tab-103" type="button" role="tab" aria-selected="false" aria-controls="panel-103" tabindex="-1">Ticket 103</button>
+      <button id="tab-cash" type="button" role="tab" aria-selected="false" aria-controls="panel-cash" tabindex="-1">Cash</button>
+      <button id="tab-reflection" type="button" role="tab" aria-selected="false" aria-controls="panel-reflection" tabindex="-1">Reflection</button>
+    </div>
+
+    <div id="panel-101" role="tabpanel" aria-labelledby="tab-101">
+      <div class="sections">
+        <section>
+          <h2>Expected</h2>
+          <p> The Boss should call the Inventory agent first, since this ticket concerns a question about the stock of a particular SKU. Boss should also call Accounting since the ticket involves an invoice and Customer Service since the customer needs a reponse. Agents should use the check_stock, check_cash_and_obligations, and quote_price tools</p>
+        </section>
+        <section class="actual">
+          <h2>Actual</h2>
+          <p>The Boss called Inventory, Accounting, and Customer Service. They used check_stock, draft_purchase_order, get_ticket, and check_cash_and_obligations to write a response and check stock, estimate replenishment, and assess lead time. Human approval recorded a $8.00 restock purchase, resolving the ticket.</p>
+        </section>
+      </div>
+    </div>
+
+    <div id="panel-102" role="tabpanel" aria-labelledby="tab-102" hidden>
+      <div class="sections">
+        <section>
+          <h2>Expected</h2>
+          <p>Boss should call Accounting and Facilities, calling Facilities first since the ticket involves rent. I expect the run to use the check_cash_and_obligations tool.</p>
+        </section>
+        <section class="actual">
+          <h2>Actual</h2>
+          <p>The Boss called Accounting and Facilities to calculate rent due and changes in cash. Tools used were check_cash_and_obligations and get_ticket. Human approval recorded the $2,400.00 rent payment, resolving the ticket.</p>
+        </section>
+      </div>
+    </div>
+
+    <div id="panel-103" role="tabpanel" aria-labelledby="tab-103" hidden>
+      <div class="sections">
+        <section>
+          <h2>Expected</h2>
+          <p>I think Boss will call Inventory agent first since this has to do with stock. Boss should also call Accounting and Customer Service. I think the MCP tool used in this run will be the quote_price) tool.</p>
+        </section>
+        <section class="actual">
+          <h2>Actual</h2>
+          <p>The Boss called Inventory, Accounting, and Customer Service to check stock and calculate discount estimates. The team approved the discount, using quote_price, check_stock, draft_purchase_order, and get_ticket. Human approval recorded the $440.00 purchase estimate, resolving the ticket.</p>
+        </section>
+      </div>
+    </div>
+
+    <div id="panel-cash" role="tabpanel" aria-labelledby="tab-cash" hidden>
+      <div class="sections">
+        <section>
+          <h2>Cash ledger</h2>
+          <p>Starting checking balance after reset: $3,400.00 (cash_accounts, dated 2026-08-31).</p>
+          <p>Ticket 101: −$8.00 for the human-approved one-unit restock purchase; balance $3,392.00.</p>
+          <p>Ticket 102: −$2,400.00 for the human-approved September rent payment; balance $992.00.</p>
+          <p>Ticket 103: −$440.00 for the human-approved 20-unit purchase order at $22.00 unit cost; balance $552.00.</p>
+          <p>Ending checking balance: $552.00, matching cash_accounts in the working database.</p>
+        </section>
+      </div>
+    </div>
+    <div id="panel-reflection" role="tabpanel" aria-labelledby="tab-reflection" hidden>
+      <section>
+        <h2>Reflection</h2>
+        <p>I think that the agents did well on all of the tickets. They also followed safety guidelines in requiring human approval for transactions. I predicted the agents that the Boss would assign to each Ticket, but they ended up using more tools than anticipated. I think Ticket 102 would've been simpler as one agent since that was just checking rent and adjusting the cash balance, which is what we did in an earlier assignment with one agent instead of 3.</p>
+        <p>I think 3 problems the Campus Customs store could have that the agent team would solve would be: paying employee salaries/adjusting cash balance accordingly (Accounting agent), paying electricity (Accounting and Facilities agents) and organizing a flash sale (Accounting, Customer Service, and Inventory agents). Since agents can understand how cash balance changes, they can understand how it would change in different contexts—paying electricity is just like paying rent, as are employee salaries. As proven by Ticket 103, the agent team is capable of projecting the impact of discounts and fluctuations in supply and sales.</p>
+        <p>Three new problems that the agents could not solve on their own are screening job applications, which would require a resume tool, employee info fetch tool, and a dedicated staff manager agent. These agents and tools would also be needed to fire employees. Finally, if the store were under threat of robbery, an agent would be needed to manage security systems, with corresponding tools to fetch and analyze security camera feed and alarm activity.</p>
+      </section>
+    </div>
+
+    <section class="run-results" aria-labelledby="run-results-heading">
+      <h2 id="run-results-heading">Run results</h2>
+      <p>Executed October 13, 2026 through the Portkey OpenAI gateway after resetting the working database.</p>
+      <div class="result-grid">
+        <article class="result-card">
+          <h3>Ticket 101 — <span class="status">Blocked</span></h3>
+          <p><strong>Agents:</strong> Inventory, Accounting, Customer Service</p>
+          <p><strong>Evidence:</strong> <code>check_stock</code>, <code>check_cash_and_obligations</code>, and a non-binding restock estimate. Size-S stock is 0; estimated reprint lead time is five days.</p>
+          <p><strong>Resolution:</strong> The order remains blocked pending human approval and vendor confirmation. Customer Service drafted a delay response.</p>
+          <p class="tools">MCP tools: check_stock, check_cash_and_obligations, draft_purchase_order, get_ticket</p>
+        </article>
+        <article class="result-card">
+          <h3>Ticket 102 — <span class="status">Needs human review</span></h3>
+          <p><strong>Agents:</strong> Accounting, Facilities</p>
+          <p><strong>Evidence:</strong> Rent is $2,400 due September 2, 2026; checking is $3,400, with $160 remaining after listed obligations.</p>
+          <p><strong>Resolution:</strong> Rent was verified, but no payment was authorized or recorded. Human approval and payment instructions are required.</p>
+          <p class="tools">MCP tools: check_cash_and_obligations, get_ticket</p>
+        </article>
+        <article class="result-card">
+          <h3>Ticket 103 — <span class="status">Needs human review</span></h3>
+          <p><strong>Agents:</strong> Inventory, Accounting, Customer Service</p>
+          <p><strong>Evidence:</strong> 8 of 20 size-M hoodies are available. The 10% discount is $52.20 each, or $1,044 total; replenishment is estimated at five days and is non-binding.</p>
+          <p><strong>Resolution:</strong> The discount was approved, but a human must choose split fulfillment or one shipment after replenishment and confirm the customer’s choice.</p>
+          <p class="tools">MCP tools: check_stock, quote_price, draft_purchase_order, get_ticket</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+    const panels = tabs.map((tab) => document.getElementById(tab.getAttribute('aria-controls')));
+
+    function selectTab(index, moveFocus = true) {
+      tabs.forEach((tab, tabIndex) => {
+        const selected = tabIndex === index;
+        tab.setAttribute('aria-selected', String(selected));
+        tab.tabIndex = selected ? 0 : -1;
+        panels[tabIndex].hidden = !selected;
+      });
+      if (moveFocus) tabs[index].focus();
+    }
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => selectTab(index, false));
+      tab.addEventListener('keydown', (event) => {
+        let nextIndex = index;
+        if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
+        else if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
+        else if (event.key === 'Home') nextIndex = 0;
+        else if (event.key === 'End') nextIndex = tabs.length - 1;
+        else return;
+        event.preventDefault();
+        selectTab(nextIndex);
+      });
+    });
+  </script>
+</body>
+</html>

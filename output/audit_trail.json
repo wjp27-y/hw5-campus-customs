@@ -1,0 +1,789 @@
+[
+  {
+    "run_id": "d799faeb-2b29-48af-ae3b-edac020efbf4",
+    "timestamp": "2026-10-13T17:27:49.411578+00:00",
+    "ticket_id": 101,
+    "step": "ticket_started",
+    "agent": "team",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "d799faeb-2b29-48af-ae3b-edac020efbf4",
+    "timestamp": "2026-10-13T17:27:49.419641+00:00",
+    "ticket_id": 101,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "ef163ebe-05fd-493b-af32-7b2d9d0da0b8",
+    "timestamp": "2026-10-13T17:30:41.912964+00:00",
+    "ticket_id": 101,
+    "step": "ticket_started",
+    "agent": "team",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "ef163ebe-05fd-493b-af32-7b2d9d0da0b8",
+    "timestamp": "2026-10-13T17:30:41.920298+00:00",
+    "ticket_id": 101,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "63b6c096-80ea-4f6b-857d-6ca6459fd7be",
+    "timestamp": "2026-10-13T17:30:43.743607+00:00",
+    "ticket_id": 102,
+    "step": "ticket_started",
+    "agent": "team",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "63b6c096-80ea-4f6b-857d-6ca6459fd7be",
+    "timestamp": "2026-10-13T17:30:43.751358+00:00",
+    "ticket_id": 102,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "19c71870-58fe-4023-ae42-e014ddc95fea",
+    "timestamp": "2026-10-13T17:30:44.995944+00:00",
+    "ticket_id": 103,
+    "step": "ticket_started",
+    "agent": "team",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "19c71870-58fe-4023-ae42-e014ddc95fea",
+    "timestamp": "2026-10-13T17:30:45.004419+00:00",
+    "ticket_id": 103,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "9eaecbde-ee53-456a-b7a9-88294b9c64ea",
+    "timestamp": "2026-10-13T17:54:17.074191+00:00",
+    "ticket_id": 101,
+    "step": "ticket_started",
+    "agent": "team",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "9eaecbde-ee53-456a-b7a9-88294b9c64ea",
+    "timestamp": "2026-10-13T17:54:17.083315+00:00",
+    "ticket_id": 101,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "46a1e558-7f0b-494b-8150-1db4b9e71713",
+    "timestamp": "2026-10-13T17:58:47.154224+00:00",
+    "ticket_id": 101,
+    "step": "ticket_started",
+    "agent": "team",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "46a1e558-7f0b-494b-8150-1db4b9e71713",
+    "timestamp": "2026-10-13T17:58:47.162020+00:00",
+    "ticket_id": 101,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "46a1e558-7f0b-494b-8150-1db4b9e71713",
+    "timestamp": "2026-10-13T17:58:56.184141+00:00",
+    "ticket_id": 101,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "created",
+    "tool_names": [
+      "check_stock",
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "46a1e558-7f0b-494b-8150-1db4b9e71713",
+    "timestamp": "2026-10-13T17:58:56.202276+00:00",
+    "ticket_id": 101,
+    "step": "specialist_work",
+    "agent": "inventory",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "46a1e558-7f0b-494b-8150-1db4b9e71713",
+    "timestamp": "2026-10-13T17:59:05.401639+00:00",
+    "ticket_id": 101,
+    "step": "specialist_work",
+    "agent": "inventory",
+    "status": "completed",
+    "tool_names": [
+      "check_stock",
+      "draft_purchase_order",
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "46a1e558-7f0b-494b-8150-1db4b9e71713",
+    "timestamp": "2026-10-13T17:59:05.418114+00:00",
+    "ticket_id": 101,
+    "step": "specialist_work",
+    "agent": "accounting",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "46a1e558-7f0b-494b-8150-1db4b9e71713",
+    "timestamp": "2026-10-13T17:59:14.569756+00:00",
+    "ticket_id": 101,
+    "step": "specialist_work",
+    "agent": "accounting",
+    "status": "completed",
+    "tool_names": [
+      "check_cash_and_obligations",
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "46a1e558-7f0b-494b-8150-1db4b9e71713",
+    "timestamp": "2026-10-13T17:59:14.599745+00:00",
+    "ticket_id": 101,
+    "step": "final_judgment",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "46a1e558-7f0b-494b-8150-1db4b9e71713",
+    "timestamp": "2026-10-13T17:59:22.948659+00:00",
+    "ticket_id": 101,
+    "step": "final_judgment",
+    "agent": "boss",
+    "status": "blocked",
+    "tool_names": [
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "46a1e558-7f0b-494b-8150-1db4b9e71713",
+    "timestamp": "2026-10-13T17:59:22.973316+00:00",
+    "ticket_id": 101,
+    "step": "customer_response",
+    "agent": "customer_service",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "46a1e558-7f0b-494b-8150-1db4b9e71713",
+    "timestamp": "2026-10-13T17:59:27.572895+00:00",
+    "ticket_id": 101,
+    "step": "customer_response",
+    "agent": "customer_service",
+    "status": "drafted",
+    "tool_names": [
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "b8768de0-948c-4192-821f-65feb659a9be",
+    "timestamp": "2026-10-13T17:59:31.642452+00:00",
+    "ticket_id": 102,
+    "step": "ticket_started",
+    "agent": "team",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "b8768de0-948c-4192-821f-65feb659a9be",
+    "timestamp": "2026-10-13T17:59:31.650385+00:00",
+    "ticket_id": 102,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "eb1c2976-c722-460c-9ce5-a5b2841c5571",
+    "timestamp": "2026-10-13T17:59:35.074009+00:00",
+    "ticket_id": 101,
+    "step": "ticket_started",
+    "agent": "team",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "eb1c2976-c722-460c-9ce5-a5b2841c5571",
+    "timestamp": "2026-10-13T17:59:35.082593+00:00",
+    "ticket_id": 101,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "eb1c2976-c722-460c-9ce5-a5b2841c5571",
+    "timestamp": "2026-10-13T17:59:36.202753+00:00",
+    "ticket_id": 101,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "created",
+    "tool_names": [
+      "check_stock",
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "eb1c2976-c722-460c-9ce5-a5b2841c5571",
+    "timestamp": "2026-10-13T17:59:36.223915+00:00",
+    "ticket_id": 101,
+    "step": "specialist_work",
+    "agent": "inventory",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "b8768de0-948c-4192-821f-65feb659a9be",
+    "timestamp": "2026-10-13T17:59:36.670225+00:00",
+    "ticket_id": 102,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "created",
+    "tool_names": [
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "b8768de0-948c-4192-821f-65feb659a9be",
+    "timestamp": "2026-10-13T17:59:36.682535+00:00",
+    "ticket_id": 102,
+    "step": "specialist_work",
+    "agent": "accounting",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "eb1c2976-c722-460c-9ce5-a5b2841c5571",
+    "timestamp": "2026-10-13T17:59:37.850199+00:00",
+    "ticket_id": 101,
+    "step": "specialist_work",
+    "agent": "inventory",
+    "status": "completed",
+    "tool_names": [
+      "check_stock",
+      "draft_purchase_order",
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "eb1c2976-c722-460c-9ce5-a5b2841c5571",
+    "timestamp": "2026-10-13T17:59:37.876021+00:00",
+    "ticket_id": 101,
+    "step": "specialist_work",
+    "agent": "accounting",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "eb1c2976-c722-460c-9ce5-a5b2841c5571",
+    "timestamp": "2026-10-13T17:59:39.086613+00:00",
+    "ticket_id": 101,
+    "step": "specialist_work",
+    "agent": "accounting",
+    "status": "completed",
+    "tool_names": [
+      "check_cash_and_obligations",
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "eb1c2976-c722-460c-9ce5-a5b2841c5571",
+    "timestamp": "2026-10-13T17:59:39.105409+00:00",
+    "ticket_id": 101,
+    "step": "final_judgment",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "eb1c2976-c722-460c-9ce5-a5b2841c5571",
+    "timestamp": "2026-10-13T17:59:39.779294+00:00",
+    "ticket_id": 101,
+    "step": "final_judgment",
+    "agent": "boss",
+    "status": "blocked",
+    "tool_names": [
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "eb1c2976-c722-460c-9ce5-a5b2841c5571",
+    "timestamp": "2026-10-13T17:59:39.800741+00:00",
+    "ticket_id": 101,
+    "step": "customer_response",
+    "agent": "customer_service",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "eb1c2976-c722-460c-9ce5-a5b2841c5571",
+    "timestamp": "2026-10-13T17:59:40.476049+00:00",
+    "ticket_id": 101,
+    "step": "customer_response",
+    "agent": "customer_service",
+    "status": "drafted",
+    "tool_names": [
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "b8768de0-948c-4192-821f-65feb659a9be",
+    "timestamp": "2026-10-13T17:59:45.407268+00:00",
+    "ticket_id": 102,
+    "step": "specialist_work",
+    "agent": "accounting",
+    "status": "completed",
+    "tool_names": [
+      "check_cash_and_obligations",
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "b8768de0-948c-4192-821f-65feb659a9be",
+    "timestamp": "2026-10-13T17:59:45.419433+00:00",
+    "ticket_id": 102,
+    "step": "specialist_work",
+    "agent": "facilities",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "b8768de0-948c-4192-821f-65feb659a9be",
+    "timestamp": "2026-10-13T17:59:53.711646+00:00",
+    "ticket_id": 102,
+    "step": "specialist_work",
+    "agent": "facilities",
+    "status": "completed",
+    "tool_names": [
+      "check_cash_and_obligations",
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "b8768de0-948c-4192-821f-65feb659a9be",
+    "timestamp": "2026-10-13T17:59:53.734268+00:00",
+    "ticket_id": 102,
+    "step": "final_judgment",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "b8768de0-948c-4192-821f-65feb659a9be",
+    "timestamp": "2026-10-13T17:59:59.720716+00:00",
+    "ticket_id": 102,
+    "step": "final_judgment",
+    "agent": "boss",
+    "status": "needs_human",
+    "tool_names": [
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "5528a056-2af8-4e95-a57a-7feb46db8356",
+    "timestamp": "2026-10-13T18:00:03.719531+00:00",
+    "ticket_id": 103,
+    "step": "ticket_started",
+    "agent": "team",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "5528a056-2af8-4e95-a57a-7feb46db8356",
+    "timestamp": "2026-10-13T18:00:03.729316+00:00",
+    "ticket_id": 103,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "5528a056-2af8-4e95-a57a-7feb46db8356",
+    "timestamp": "2026-10-13T18:00:12.640384+00:00",
+    "ticket_id": 103,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "created",
+    "tool_names": [
+      "check_stock",
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "5528a056-2af8-4e95-a57a-7feb46db8356",
+    "timestamp": "2026-10-13T18:00:12.670966+00:00",
+    "ticket_id": 103,
+    "step": "specialist_work",
+    "agent": "inventory",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "5528a056-2af8-4e95-a57a-7feb46db8356",
+    "timestamp": "2026-10-13T18:00:23.839471+00:00",
+    "ticket_id": 103,
+    "step": "specialist_work",
+    "agent": "inventory",
+    "status": "completed",
+    "tool_names": [
+      "check_stock",
+      "draft_purchase_order",
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "5528a056-2af8-4e95-a57a-7feb46db8356",
+    "timestamp": "2026-10-13T18:00:23.868429+00:00",
+    "ticket_id": 103,
+    "step": "specialist_work",
+    "agent": "accounting",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "5528a056-2af8-4e95-a57a-7feb46db8356",
+    "timestamp": "2026-10-13T18:00:39.834284+00:00",
+    "ticket_id": 103,
+    "step": "specialist_work",
+    "agent": "accounting",
+    "status": "completed",
+    "tool_names": [
+      "check_cash_and_obligations",
+      "final_result",
+      "get_ticket",
+      "quote_price"
+    ]
+  },
+  {
+    "run_id": "5528a056-2af8-4e95-a57a-7feb46db8356",
+    "timestamp": "2026-10-13T18:00:39.864066+00:00",
+    "ticket_id": 103,
+    "step": "final_judgment",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "5528a056-2af8-4e95-a57a-7feb46db8356",
+    "timestamp": "2026-10-13T18:00:47.027050+00:00",
+    "ticket_id": 103,
+    "step": "final_judgment",
+    "agent": "boss",
+    "status": "needs_human",
+    "tool_names": [
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "5528a056-2af8-4e95-a57a-7feb46db8356",
+    "timestamp": "2026-10-13T18:00:47.037911+00:00",
+    "ticket_id": 103,
+    "step": "customer_response",
+    "agent": "customer_service",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "5528a056-2af8-4e95-a57a-7feb46db8356",
+    "timestamp": "2026-10-13T18:00:51.180878+00:00",
+    "ticket_id": 103,
+    "step": "customer_response",
+    "agent": "customer_service",
+    "status": "drafted",
+    "tool_names": [
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "1289dcbe-1688-453d-a5fa-d329f0a677dc",
+    "timestamp": "2026-10-13T18:01:58.653912+00:00",
+    "ticket_id": 102,
+    "step": "ticket_started",
+    "agent": "team",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "1289dcbe-1688-453d-a5fa-d329f0a677dc",
+    "timestamp": "2026-10-13T18:01:58.662235+00:00",
+    "ticket_id": 102,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "1289dcbe-1688-453d-a5fa-d329f0a677dc",
+    "timestamp": "2026-10-13T18:01:59.792496+00:00",
+    "ticket_id": 102,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "created",
+    "tool_names": [
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "1289dcbe-1688-453d-a5fa-d329f0a677dc",
+    "timestamp": "2026-10-13T18:01:59.812118+00:00",
+    "ticket_id": 102,
+    "step": "specialist_work",
+    "agent": "accounting",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "1289dcbe-1688-453d-a5fa-d329f0a677dc",
+    "timestamp": "2026-10-13T18:02:01.331227+00:00",
+    "ticket_id": 102,
+    "step": "specialist_work",
+    "agent": "accounting",
+    "status": "completed",
+    "tool_names": [
+      "check_cash_and_obligations",
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "1289dcbe-1688-453d-a5fa-d329f0a677dc",
+    "timestamp": "2026-10-13T18:02:01.344868+00:00",
+    "ticket_id": 102,
+    "step": "specialist_work",
+    "agent": "facilities",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "1289dcbe-1688-453d-a5fa-d329f0a677dc",
+    "timestamp": "2026-10-13T18:02:02.787375+00:00",
+    "ticket_id": 102,
+    "step": "specialist_work",
+    "agent": "facilities",
+    "status": "completed",
+    "tool_names": [
+      "check_cash_and_obligations",
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "1289dcbe-1688-453d-a5fa-d329f0a677dc",
+    "timestamp": "2026-10-13T18:02:02.819423+00:00",
+    "ticket_id": 102,
+    "step": "final_judgment",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "1289dcbe-1688-453d-a5fa-d329f0a677dc",
+    "timestamp": "2026-10-13T18:02:03.814907+00:00",
+    "ticket_id": 102,
+    "step": "final_judgment",
+    "agent": "boss",
+    "status": "needs_human",
+    "tool_names": [
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "e8a29b94-0cde-47c7-a239-b8d5cf5b267f",
+    "timestamp": "2026-10-13T18:03:29.198343+00:00",
+    "ticket_id": 103,
+    "step": "ticket_started",
+    "agent": "team",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "e8a29b94-0cde-47c7-a239-b8d5cf5b267f",
+    "timestamp": "2026-10-13T18:03:29.206565+00:00",
+    "ticket_id": 103,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "e8a29b94-0cde-47c7-a239-b8d5cf5b267f",
+    "timestamp": "2026-10-13T18:03:30.812935+00:00",
+    "ticket_id": 103,
+    "step": "dispatch_plan",
+    "agent": "boss",
+    "status": "created",
+    "tool_names": [
+      "check_stock",
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "e8a29b94-0cde-47c7-a239-b8d5cf5b267f",
+    "timestamp": "2026-10-13T18:03:30.831799+00:00",
+    "ticket_id": 103,
+    "step": "specialist_work",
+    "agent": "inventory",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "e8a29b94-0cde-47c7-a239-b8d5cf5b267f",
+    "timestamp": "2026-10-13T18:03:32.658431+00:00",
+    "ticket_id": 103,
+    "step": "specialist_work",
+    "agent": "inventory",
+    "status": "completed",
+    "tool_names": [
+      "check_stock",
+      "draft_purchase_order",
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "e8a29b94-0cde-47c7-a239-b8d5cf5b267f",
+    "timestamp": "2026-10-13T18:03:32.682191+00:00",
+    "ticket_id": 103,
+    "step": "specialist_work",
+    "agent": "accounting",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "e8a29b94-0cde-47c7-a239-b8d5cf5b267f",
+    "timestamp": "2026-10-13T18:03:34.433459+00:00",
+    "ticket_id": 103,
+    "step": "specialist_work",
+    "agent": "accounting",
+    "status": "completed",
+    "tool_names": [
+      "check_cash_and_obligations",
+      "final_result",
+      "get_ticket",
+      "quote_price"
+    ]
+  },
+  {
+    "run_id": "e8a29b94-0cde-47c7-a239-b8d5cf5b267f",
+    "timestamp": "2026-10-13T18:03:34.442658+00:00",
+    "ticket_id": 103,
+    "step": "final_judgment",
+    "agent": "boss",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "e8a29b94-0cde-47c7-a239-b8d5cf5b267f",
+    "timestamp": "2026-10-13T18:03:35.363600+00:00",
+    "ticket_id": 103,
+    "step": "final_judgment",
+    "agent": "boss",
+    "status": "needs_human",
+    "tool_names": [
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "e8a29b94-0cde-47c7-a239-b8d5cf5b267f",
+    "timestamp": "2026-10-13T18:03:35.391479+00:00",
+    "ticket_id": 103,
+    "step": "customer_response",
+    "agent": "customer_service",
+    "status": "started",
+    "tool_names": []
+  },
+  {
+    "run_id": "e8a29b94-0cde-47c7-a239-b8d5cf5b267f",
+    "timestamp": "2026-10-13T18:03:37.212515+00:00",
+    "ticket_id": 103,
+    "step": "customer_response",
+    "agent": "customer_service",
+    "status": "drafted",
+    "tool_names": [
+      "final_result",
+      "get_ticket"
+    ]
+  },
+  {
+    "run_id": "human-approval-2026-10-13",
+    "timestamp": "2026-10-13T18:15:56.425000+00:00",
+    "ticket_id": 101,
+    "step": "human_approval",
+    "agent": "human",
+    "status": "approved",
+    "tool_names": [
+      "/approvals/purchase"
+    ]
+  },
+  {
+    "run_id": "human-approval-2026-10-13",
+    "timestamp": "2026-10-13T18:15:56.439430+00:00",
+    "ticket_id": 102,
+    "step": "human_approval",
+    "agent": "human",
+    "status": "approved",
+    "tool_names": [
+      "/approvals/payment"
+    ]
+  },
+  {
+    "run_id": "human-approval-2026-10-13",
+    "timestamp": "2026-10-13T18:15:56.453885+00:00",
+    "ticket_id": 103,
+    "step": "human_approval",
+    "agent": "human",
+    "status": "approved",
+    "tool_names": [
+      "/approvals/purchase"
+    ]
+  }
+]

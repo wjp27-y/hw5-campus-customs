@@ -1,0 +1,2 @@
+pydantic-ai[mcp]>=2.54,<3
+mcp<2

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Customs — Resolved Ticket Dashboard</title>
+  <style>
+    :root { font-family: "Segoe UI", Arial, sans-serif; color: #172b4d; background: #eef3f8; }
+    body { margin: 0; padding: 2rem 1rem; }
+    main { max-width: 1100px; margin: auto; }
+    header { padding: 1.5rem 0; }
+    h1 { margin: 0 0 .4rem; color: #0f2e5f; }
+    header p { margin: 0; color: #52657d; }
+    .cash { margin: 1rem 0 1.5rem; padding: 1.25rem 1.5rem; background: #0f2e5f; color: white; border-radius: 12px; display: flex; justify-content: space-between; gap: 1rem; align-items: center; }
+    .cash strong { display: block; font-size: 2rem; }
+    .cash span { color: #dbe8f7; }
+    .board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .snapshot { background: white; border: 1px solid #d7e0eb; border-radius: 12px; box-shadow: 0 6px 18px #16365d12; overflow: hidden; }
+    .snapshot-head { padding: 1rem 1.1rem; background: #f8fafc; border-bottom: 1px solid #e3eaf2; display: flex; justify-content: space-between; gap: .5rem; }
+    .snapshot h2 { margin: 0; font-size: 1.1rem; }
+    .resolved { color: #166534; font-weight: 700; font-size: .8rem; text-transform: uppercase; }
+    .snapshot-body { padding: 1.1rem; }
+    .metric { margin: 0 0 1rem; color: #52657d; font-size: .9rem; }
+    .metric strong { display: block; color: #172b4d; font-size: 1.45rem; margin-top: .2rem; }
+    .snapshot h3 { margin: 1rem 0 .35rem; font-size: .9rem; color: #0f2e5f; text-transform: uppercase; letter-spacing: .04em; }
+    .snapshot p { margin: .35rem 0; line-height: 1.45; }
+    .snapshot ul { margin: .35rem 0 0; padding-left: 1.1rem; }
+    .snapshot li { margin: .3rem 0; }
+    .approval { padding: .7rem; margin-top: 1rem; border-left: 4px solid #c58b22; background: #fff8e7; }
+    footer { margin-top: 1.5rem; color: #52657d; font-size: .85rem; }
+    @media (max-width: 850px) { .board { grid-template-columns: 1fr; } .cash { align-items: flex-start; flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Campus Customs — Resolved Ticket Dashboard</h1>
+      <p>Static dashboard snapshots captured after the authorized human approvals on October 13, 2026.</p>
+    </header>
+    <section class="cash" aria-label="Cash summary">
+      <div><span>Working checking account</span><strong>$552.00</strong></div>
+      <div><span>Starting balance: $3,400.00</span><br><span>Approved cash changes: −$8.00, −$2,400.00, −$440.00</span></div>
+    </section>
+    <section class="board" aria-label="Resolved ticket snapshots">
+      <article class="snapshot">
+        <div class="snapshot-head"><h2>Ticket 101</h2><span class="resolved">Resolved</span></div>
+        <div class="snapshot-body">
+          <p class="metric">Bulldog tee · size S<strong>Blocked → Resolved</strong></p>
+          <h3>Agent team</h3><p>Boss, Inventory, Accounting, Customer Service</p>
+          <h3>Dashboard snapshot</h3><p>Size-S stock was 0. Inventory estimated a five-day replenishment; Accounting checked obligations; Customer Service drafted the delay response.</p>
+          <div class="approval"><strong>Human approval</strong><br>$8.00 restock purchase approved by Coursework operator.</div>
+        </div>
+      </article>
+      <article class="snapshot">
+        <div class="snapshot-head"><h2>Ticket 102</h2><span class="resolved">Resolved</span></div>
+        <div class="snapshot-body">
+          <p class="metric">Chapel Street rent<strong>Needs human → Resolved</strong></p>
+          <h3>Agent team</h3><p>Boss, Accounting, Facilities</p>
+          <h3>Dashboard snapshot</h3><p>Rent of $2,400 was verified as due September 2, 2026. The pre-payment checking balance was $3,392.00 after Ticket 101.</p>
+          <div class="approval"><strong>Human approval</strong><br>$2,400.00 rent payment approved by Coursework operator.</div>
+        </div>
+      </article>
+      <article class="snapshot">
+        <div class="snapshot-head"><h2>Ticket 103</h2><span class="resolved">Resolved</span></div>
+        <div class="snapshot-body">
+          <p class="metric">Bulk hoodie discount<strong>Needs human → Resolved</strong></p>
+          <h3>Agent team</h3><p>Boss, Inventory, Accounting, Customer Service</p>
+          <h3>Dashboard snapshot</h3><p>8 of 20 size-M hoodies were available. Accounting approved 10% off at $52.20 each; Customer Service drafted split-fulfillment options.</p>
+          <div class="approval"><strong>Human approval</strong><br>$440.00 purchase order approved by Coursework operator.</div>
+        </div>
+      </article>
+    </section>
+    <footer>Source: data/campus_customs_new.db, output/audit_trail.json, and the Problem 8 dashboard workflow. Purchase approvals are recorded as non-vendor-contacting coursework actions.</footer>
+  </main>
+</body>
+</html>

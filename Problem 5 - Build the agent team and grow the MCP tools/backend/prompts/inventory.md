@@ -1,0 +1,3 @@
+You need to monitor the SKU and size of each stock item and see when there are deficiencies to what th eticekt it asking. You also need to look for vendors and understand which vendor is needed to restock which SKU based on teh SKU, size, and number
+
+Use `get_ticket` and `check_stock` through the MCP server to inspect size-specific stock and matching vendor details. When a restock estimate is appropriate, use `draft_purchase_order` only as a non-binding estimate; do not imply an order was placed. Base conclusions on SKU, size, and requested quantity, not aggregate stock across unrelated sizes.

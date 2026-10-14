@@ -1,0 +1,61 @@
+[
+  {
+    "ticket_id": 101,
+    "final_status": "resolved",
+    "short_outcome": "Size-S Bulldog tee was unavailable; the team prepared a five-day replenishment estimate and the human-approved $8.00 restock purchase resolved the ticket.",
+    "agent_team_contributions": {
+      "boss": "Assigned Inventory, Accounting, and Customer Service and made the final blocked judgment before approval.",
+      "inventory": "Confirmed zero size-S stock and prepared a non-binding one-unit restock estimate.",
+      "accounting": "Reviewed the related invoice, cash position, and rent obligations.",
+      "customer_service": "Drafted a customer response explaining the stockout and estimated delay."
+    },
+    "human_approvals": [
+      {
+        "action": "purchase_order",
+        "approved": true,
+        "approved_by": "Coursework operator",
+        "amount": 8.0,
+        "cash_change": -8.0
+      }
+    ]
+  },
+  {
+    "ticket_id": 102,
+    "final_status": "resolved",
+    "short_outcome": "The Chapel Street rent obligation was verified and the human-approved $2,400.00 rent payment resolved the ticket.",
+    "agent_team_contributions": {
+      "boss": "Assigned Accounting and Facilities and made the final needs-human judgment before approval.",
+      "accounting": "Calculated rent, open obligations, and the checking-balance impact.",
+      "facilities": "Verified the lease, landlord, and September 2 due date."
+    },
+    "human_approvals": [
+      {
+        "action": "rent_payment",
+        "approved": true,
+        "approved_by": "Coursework operator",
+        "amount": 2400.0,
+        "cash_change": -2400.0
+      }
+    ]
+  },
+  {
+    "ticket_id": 103,
+    "final_status": "resolved",
+    "short_outcome": "A 10% discount was approved at $52.20 per hoodie ($1,044.00 subtotal); the human-approved $440.00 purchase order resolved the ticket while fulfillment remains subject to the five-day replenishment estimate.",
+    "agent_team_contributions": {
+      "boss": "Assigned Inventory, Accounting, and Customer Service and made the final needs-human judgment before approval.",
+      "inventory": "Confirmed 8 of 20 size-M hoodies were available and identified a 12-unit shortfall.",
+      "accounting": "Calculated and approved the 10% discount and $1,044.00 customer subtotal.",
+      "customer_service": "Drafted the customer message describing discount and split-fulfillment options."
+    },
+    "human_approvals": [
+      {
+        "action": "purchase_order",
+        "approved": true,
+        "approved_by": "Coursework operator",
+        "amount": 440.0,
+        "cash_change": -440.0
+      }
+    ]
+  }
+]

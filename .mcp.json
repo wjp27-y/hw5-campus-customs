@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "campus-customs": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "Problem 3 - Build the MCP server\\mcp_server\\server.py"
+      ]
+    }
+  }
+}
